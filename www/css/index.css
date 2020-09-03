@@ -7,11 +7,13 @@ body {
 	padding: 0;
 	line-height: 1.5em;
 	font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color: black;
+	font-size: .9em;
+	color:#545454;
 }
 
 b {
 	font-size: 110%;
+	
 }
 
 em {
@@ -19,10 +21,16 @@ em {
 }
 
 h1 {
-	color: white;
-	background-color: #E98300;
-	font-weight: bold;
+	/* color: white;
+	 background-color: #005B99; */
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 550;
+	font-size: 1em;
 	padding: 1px 5px 1px 5px;
+	border-bottom: 1px solid #F1F1F1;
+	text-align: center;
+	margin: 5px;
+	color: black; 
 }
 
 #mainwrapper {
@@ -48,9 +56,9 @@ h1 {
 }
 
 #request_form {	
-	top: 45px;
-	left: 5px;
-	margin: 5px;
+	top: 10px;
+	left: 10px;
+	margin: 1px;
 	text-align: left;
 	position: absolute;
 	z-index: 100;
@@ -58,7 +66,6 @@ h1 {
 	border-radius: 8px;
 	background-color: white;
 	min-height: 402px;
-	box-shadow: 10px 10px 5px #888;
 	width: 390px;
 }
 
@@ -76,10 +83,21 @@ h1 {
 
 }
 
-#draw-tools button {
-	margin: 15px 10px 0px 23px;
+#submission button.btn-outline-dark {
+	position: relative;
+	margin: 0px 10px 10px 2px;
 	width: 130px;
-}
+	background-color: #E98300;
+	border: #E98300;
+	color: white;
+} 
+
+
+.alert {
+	display: inline-block;
+	width: 100%;
+} 
+
 
 #fmeForm {
 	padding-left: 10px;
@@ -122,7 +140,7 @@ h1 {
 	vertical-align:middle;
 	margin: 5px 30px 5px 0px;
 	font-weight: normal;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 16px;
 	position: inherit;
 	clear:left;
@@ -223,7 +241,7 @@ h1 {
 }
 
 #instructions {
-	font-size: 14px;
+	font-size: 12px;
 }
 
 /* utility classes */
