@@ -1,4 +1,4 @@
-# LandsatSentinelSelector
+# LandsatSelector
 
 This example provides a simple interface for the visual selection and download of
 Landsat images.
