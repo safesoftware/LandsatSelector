@@ -30,18 +30,19 @@
 				<h1>Step 1: Set Parameters</h1>
 				<div class="container-fluid justify-content-center" id="parameters">
 					<form role="form">
+					
 						<!-- CLOUD COVERAGE -->
-
 						<div id="cloudcov" class="cloudcov">
-							<label for="CloudFilter" class="col-med control-label">Cloud Coverage</label>
-							<div class="form-group row m-0">
-								<div class="input-group mb-3 input-group-sm col-sm-10">
-								<input type="text" class="form-control form-control-sm" id="CloudFilter" value="5" />
-									<div class="input-group-append">
-										<span class="input-group-text">%</span>
-									</div>
+
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <span class="input-group-text">Cloud Coverage</span>
 								</div>
-							</div>
+								<input type="text" class="form-control" id="CloudFilter" value="5">
+								<div class="input-group-append">
+								  <span class="input-group-text">%</span>
+								</div>
+							  </div>
 						</div>
 
 					</form> 
@@ -73,9 +74,9 @@
 		var map = L.map('map_canvas', { zoomControl: false }).setView([49.5, -123.5], 8);
 		var layer;
 
-		var baselayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', {
+		var baselayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			maxZoom: 10,
-			attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'	
+			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 		}).addTo(map);
 
 		new L.Control.Zoom({position: 'bottomright'}).addTo(map);

@@ -16,6 +16,10 @@ b {
 	
 }
 
+p {
+	margin: 5px 30px 5px 15px;
+}
+
 em {
 	color: red;
 }
@@ -67,6 +71,7 @@ h1 {
 	background-color: white;
 	min-height: 302px;
 	width: 390px;
+	padding: 10px;
 }
 
 #request_form h1:first-child {
@@ -98,6 +103,17 @@ h1 {
 	width: 100%;
 } 
 
+input { 
+	text-align: right; 
+}
+
+.input-group-text {
+	font-size: 14px;
+}
+
+.form-control {
+	font-size: 14px;
+}
 
 #fmeForm {
 	padding-left: 10px;
